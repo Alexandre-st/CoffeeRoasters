@@ -7,10 +7,12 @@ const Home = () => {
   return ( 
     <div className="main">
       <section className="hero">
-        <h1 className="hero-title">Great coffee made simple.</h1>
-        <p className="hero-text">
-          Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.
-        </p>
+        <div className="hero-content">
+          <h1 className="hero-content-title">Great coffee made simple.</h1>
+          <p className="hero-content-text">
+            Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.
+          </p>
+        </div>
         <button className="hero-button button">
           Create your plan
         </button>
@@ -40,7 +42,6 @@ const Home = () => {
         </div>
       </section>
     </div>
-    
   );
 }
  
