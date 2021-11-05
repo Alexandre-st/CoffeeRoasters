@@ -1,14 +1,22 @@
+import { Link } from 'react-router-dom';
+import logo from '../assets/shared/desktop/logo.svg';
 
 const Header = () => {
   return (  
     <section className="header">
       <div className="header-container">
-        <img src="" alt="" />
+        <img src={logo} alt="Coffeeroasters" />
         <nav>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Create your plan</li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+            <Link to="/plan">
+              <li>Create your plan</li>
+            </Link>
           </ul>
         </nav>
       </div>
