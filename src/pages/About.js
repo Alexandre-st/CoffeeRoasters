@@ -8,7 +8,7 @@ import Quarters from '../components/Quarters';
 
 const About = () => {
   return ( 
-    <div className="main">
+    <main className="main">
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-content-title-about">About us</h1>
@@ -47,7 +47,7 @@ const About = () => {
         <Quarters />
       </section>
 
-    </div>
+    </main>
   );
 }
  

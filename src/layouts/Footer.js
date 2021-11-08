@@ -6,7 +6,7 @@ import instagram from '../assets/shared/desktop/icon-instagram.svg';
 
 const Footer = () => {
   return ( 
-    <section className="footer">
+    <footer className="footer">
       <div className="footer-container">
         <img src={logo} alt="Coffeeroasters" />
         <nav>
@@ -28,7 +28,7 @@ const Footer = () => {
           <img src={instagram} alt="Instagram" />
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
  

@@ -5,7 +5,7 @@ import Step from "../components/Step";
 const Home = () => {
 
   return ( 
-    <div className="main">
+    <main className="main">
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-content-title">Great coffee made simple.</h1>
@@ -41,7 +41,7 @@ const Home = () => {
           <button className="step-button button">Create your plan</button>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
  

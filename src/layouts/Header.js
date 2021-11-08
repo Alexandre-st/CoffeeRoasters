@@ -3,7 +3,7 @@ import logo from '../assets/shared/desktop/logo.svg';
 
 const Header = () => {
   return (  
-    <section className="header">
+    <header className="header">
       <div className="header-container">
         <img src={logo} alt="Coffeeroasters" />
         <nav>
@@ -20,7 +20,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-    </section>
+    </header>
   );
 }
  

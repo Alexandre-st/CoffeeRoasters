@@ -3,7 +3,7 @@ import Step from "../components/Step";
 
 const Plan = () => {
   return ( 
-    <div className="main">
+    <main className="main">
       <section className="hero-content">
         <h1 className="hero-content-title">Create a plan</h1>
         <p className="hero-content-text">
@@ -19,7 +19,7 @@ const Plan = () => {
       <div className="dropdown">
 
       </div>
-    </div>
+    </main>
   );
 }
  
