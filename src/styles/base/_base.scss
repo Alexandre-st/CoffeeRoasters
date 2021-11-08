@@ -8,6 +8,7 @@
 :root {
   font-size: 10px;
   background-color: $light-cream;
+  font-family: "Barlow", sans-serif;
 }
 
 h1,
@@ -24,4 +25,9 @@ button {
   color: $light-cream;
   text-align: center;
   border-radius: 6px;
+}
+
+.button {
+  width: 21.7rem;
+  height: 5.6rem;
 }

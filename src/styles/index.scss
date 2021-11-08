@@ -1,3 +1,9 @@
 // == BASE == //
 @use "./base/reset";
 @use "./base/base";
+
+// == LAYOUTS == //
+@use "./layouts";
+
+// == PAGES == //
+@use "./pages";

@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/shared/desktop/logo.svg';
+import Menu from '../components/Menu';
 
 const Header = () => {
+
+
   return (  
     <header className="header">
       <div className="header-container">
-        <img src={logo} alt="Coffeeroasters" />
-        <nav>
+        <Link to="/">
+          <img className="header-logo" src={logo} alt="Coffeeroasters" />
+        </Link>
+
+        <nav className="header-nav-desktop">
           <ul>
             <Link to="/">
               <li>Home</li>
@@ -19,6 +25,8 @@ const Header = () => {
             </Link>
           </ul>
         </nav>
+
+        <Menu />
       </div>
     </header>
   );

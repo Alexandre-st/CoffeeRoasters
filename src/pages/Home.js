@@ -12,10 +12,10 @@ const Home = () => {
           <p className="hero-content-text">
             Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.
           </p>
+          <button className="button">
+            Create your plan
+          </button>
         </div>
-        <button className="hero-button button">
-          Create your plan
-        </button>
       </section>
 
       <section className="collection">

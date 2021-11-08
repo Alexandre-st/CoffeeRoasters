@@ -1,0 +1,54 @@
+// To use breakpoints and the diferents colors
+@use "../variables/mixins" as *;
+@use "../abstract/colors" as *;
+
+.main {
+  padding: 0 2.4rem;
+
+  @include mq(tablet) {
+    padding: 0 4rem;
+  }
+}
+
+.hero {
+  background-image: url(../../assets/home/mobile/image-hero-coffeepress.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  height: 50rem;
+
+  @include mq(tablet) {
+    background-image: url(../../assets/home/tablet/image-hero-coffeepress.jpg);
+  }
+
+  &-content {
+    padding: 10rem 2.4rem;
+    color: $light-cream;
+    text-align: center;
+
+    @include mq(tablet) {
+      padding: 10.4rem 27.3rem 10.4rem 5.8rem;
+      text-align: left;
+    }
+
+    &-title {
+      font-size: 4rem;
+      line-height: 4rem;
+
+      @include mq(tablet) {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+      }
+    }
+
+    &-text {
+      margin: 2.4rem 0 3.9rem 0;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+}
+
+// Need to finish the desktop design for the hero
