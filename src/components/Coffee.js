@@ -34,8 +34,10 @@ const Coffee = () => {
       return (
         <div className="collection-content" key={uuidv4()}>
           <img className="collection-content-img" src={coffee.img} alt={coffee.name} />
-          <h4 className="collection-content-title">{coffee.name}</h4>
-          <p className="collection-content-p">{coffee.text}</p>
+          <div className="collection-content-text">
+            <h4 className="collection-content-text-name">{coffee.name}</h4>
+            <p className="collection-content-text-paragraph">{coffee.text}</p>
+          </div>
         </div>
       )
     })

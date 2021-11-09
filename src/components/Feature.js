@@ -14,7 +14,7 @@ const Feature = () => {
     },
     {
       img: Gift,
-      name: Gift,
+      name: 'Gift',
       title: 'Exclusive benefits',
       text: 'Special offers and swag when you subscribe, including 30% off your first shipment.'
     },
@@ -30,8 +30,8 @@ const Feature = () => {
     features.map(feature => {
       return (
         <div className="choose-content" key={uuidv4()}>
-          <img src={feature.img} alt={feature.title} />
-          <h4 className="choose-content-title">{feature.name}</h4>
+          <img className="choose-content-img" src={feature.img} alt={feature.name} />
+          <h4 className="choose-content-title">{feature.title}</h4>
           <p className="choose-content-txt">{feature.text}</p>
         </div>
       );

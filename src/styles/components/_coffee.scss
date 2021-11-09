@@ -1,0 +1,107 @@
+// To use breakpoints and the diferents colors
+@use "../variables/mixins" as *;
+@use "../abstract/colors" as *;
+
+// == Collection Part
+.collection {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &-title {
+    margin: 12rem 0 1.3rem 0;
+    font-size: 4rem;
+    line-height: 7.2rem;
+    font-weight: 900;
+    text-align: center;
+    color: transparent;
+    // For the gradient color
+    background: linear-gradient(180deg, $grey 0%, #fefcf7 100%);
+    background-clip: text;
+
+    @include mq(tablet) {
+      margin: 14.4rem 0 -1rem 0;
+      font-size: 9.6rem;
+    }
+
+    @include mq(laptop) {
+      margin-top: 13.6rem;
+      font-size: 15rem;
+      line-height: normal;
+      background: linear-gradient(180deg, $dark-cream 40%, #fefcf7 100%);
+      background-clip: text;
+      letter-spacing: 4px;
+    }
+  }
+
+  @include mq(laptop) {
+    &-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      margin-top: -7rem;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3.6rem;
+      text-align: left;
+      margin-bottom: 3.2rem;
+    }
+
+    @include mq(laptop) {
+      flex-direction: column;
+      text-align: center;
+      gap: 7.15rem;
+    }
+
+    &-img {
+      width: 20rem;
+      height: 15.1rem;
+
+      @include mq(tablet) {
+        width: 25.5rem;
+        height: 19.3rem;
+      }
+    }
+
+    &-text {
+      margin: 2.4rem 0 4.8rem 0;
+      color: $dark-grey;
+      width: 28.2rem;
+
+      @include mq(tablet) {
+        margin-top: -2rem;
+      }
+
+      &-name {
+        font-size: 2.4rem;
+        font-weight: 900;
+        line-height: 3.2rem;
+        margin-bottom: 1.6rem;
+
+        @include mq(tablet) {
+          margin-bottom: 2.4rem;
+        }
+      }
+
+      &-paragraph {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+        @include mq(laptop) {
+          font-size: 1.6rem;
+          width: 25.5rem;
+        }
+      }
+    }
+  }
+}

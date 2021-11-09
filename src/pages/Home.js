@@ -23,7 +23,9 @@ const Home = () => {
 
       <section className="collection">
         <h2 className="collection-title">our collection</h2>
-        <Coffee />
+        <div className="collection-container">
+          <Coffee />
+        </div>
       </section>
 
       <section className="choose">

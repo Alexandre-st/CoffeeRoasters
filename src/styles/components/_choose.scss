@@ -1,0 +1,30 @@
+// To use breakpoints and the diferents colors
+@use "../variables/mixins" as *;
+@use "../abstract/colors" as *;
+
+.choose {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &-content {
+    background-color: $dark-cyan;
+    border-radius: 8px;
+    padding: 7.2rem 0 5.1rem 0;
+    // height: 38.2rem;
+
+    &-title {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      margin: 5.6rem 0 2.4rem 0;
+    }
+
+    &-txt {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      padding: 0 3.5rem;
+    }
+  }
+}
