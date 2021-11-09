@@ -3,19 +3,19 @@
 @use "../abstract/colors" as *;
 
 .header {
+  padding: 3.2rem 2.4rem 4rem 2.4rem;
+
+  @include mq(tablet) {
+    padding: 4rem 4rem 5.3rem 3.9em;
+  }
+
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.2rem 2.4rem 4rem 2.4rem;
 
-    @include mq(tablet) {
-      padding: 4rem 4rem 5.3rem 3.9em;
-    }
-
-    @include mq(tablet-large) {
+    @include mq(laptop) {
       max-width: 128rem;
-      padding: 4.35rem 8rem 4.4rem 8rem;
       margin: auto;
     }
   }

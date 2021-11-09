@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Coffee from "../components/Coffee";
 import Feature from "../components/Feature";
 import Step from "../components/Step";
@@ -6,14 +7,16 @@ const Home = () => {
 
   return ( 
     <main className="main">
-      <section className="hero">
+      <section className="home">
         <div className="hero-content">
           <h1 className="hero-content-title">Great coffee made simple.</h1>
           <p className="hero-content-text">
             Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.
           </p>
           <button className="button">
-            Create your plan
+            <Link to="/plan">
+              Create your plan
+            </Link>
           </button>
         </div>
       </section>

@@ -10,7 +10,7 @@
   }
 }
 
-.hero {
+.home {
   background-image: url(../../assets/home/mobile/image-hero-coffeepress.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,14 +21,28 @@
     background-image: url(../../assets/home/tablet/image-hero-coffeepress.jpg);
   }
 
+  @include mq(laptop) {
+    background-image: url(../../assets/home/desktop/image-hero-coffeepress.jpg);
+    height: 60rem;
+    max-width: 128rem;
+    margin: 0 auto;
+  }
+}
+
+// I hope the design fit for the other pages
+.hero {
   &-content {
     padding: 10rem 2.4rem;
-    color: $light-cream;
     text-align: center;
+    color: $light-cream;
 
     @include mq(tablet) {
       padding: 10.4rem 27.3rem 10.4rem 5.8rem;
       text-align: left;
+    }
+
+    @include mq(laptop) {
+      width: 493px;
     }
 
     &-title {
@@ -39,6 +53,12 @@
         font-size: 4.8rem;
         line-height: 4.8rem;
       }
+
+      @include mq(laptop) {
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+        width: 49.3rem;
+      }
     }
 
     &-text {
@@ -47,8 +67,12 @@
       line-height: 2.5rem;
       font-weight: 400;
       opacity: 0.8;
+
+      @include mq(laptop) {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        width: 44rem;
+      }
     }
   }
 }
-
-// Need to finish the desktop design for the hero

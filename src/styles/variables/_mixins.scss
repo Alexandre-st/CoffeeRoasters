@@ -10,12 +10,12 @@
       @content;
     }
   }
-  @if $breakpoint == tablet-large {
+  @if $breakpoint == laptop {
     @media (min-width: 1024px) {
       @content;
     }
   }
-  @if $breakpoint == desktop-large {
+  @if $breakpoint == desktop {
     @media (min-width: 1760px) {
       @content;
     }

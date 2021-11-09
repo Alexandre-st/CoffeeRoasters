@@ -19,6 +19,11 @@ button {
   font-family: "Fraunces", serif;
 }
 
+.main {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
 button {
   font-size: 1.8rem;
   background-color: $dark-cyan;
