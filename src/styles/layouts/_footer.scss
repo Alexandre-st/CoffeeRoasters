@@ -1,0 +1,66 @@
+// To use breakpoints and the diferents colors
+@use "../variables/mixins" as *;
+@use "../abstract/colors" as *;
+
+.footer {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 2.4rem 7.2rem 2.4rem;
+
+  @include mq(tablet) {
+    padding: 0 4rem 7.2rem 4rem;
+  }
+
+  &-img {
+    max-width: 23.6rem;
+
+    @include mq(laptop) {
+      margin-right: 10.29rem;
+    }
+  }
+
+  &-container {
+    background-color: $background-gray;
+    padding: 5.4rem 5.14rem 5.4rem 5.5rem;
+    text-align: center;
+
+    @include mq(laptop) {
+      display: flex;
+      align-items: center;
+      padding: 4.7rem 8.5rem;
+    }
+
+    &-list {
+      margin: 4.84rem 0 4.85rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      text-transform: uppercase;
+      color: $grey;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.92px;
+      cursor: pointer;
+
+      @include mq(tablet) {
+        flex-direction: row;
+        justify-content: center;
+        margin: 3.2rem 0 6.5rem 0;
+        gap: 3.2rem;
+      }
+
+      @include mq(laptop) {
+        margin: 0 36.8rem 0 0;
+        gap: 3.3rem;
+        align-self: center;
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+}

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/shared/desktop/logo.svg';
+import logo from '../assets/shared/desktop/logo-white.svg';
 import facebook from '../assets/shared/desktop/icon-facebook.svg';
 import twitter from '../assets/shared/desktop/icon-twitter.svg';
 import instagram from '../assets/shared/desktop/icon-instagram.svg';
@@ -8,9 +8,11 @@ const Footer = () => {
   return ( 
     <footer className="footer">
       <div className="footer-container">
-        <img src={logo} alt="Coffeeroasters" />
+        <Link to="/">
+          <img className="footer-img" src={logo} alt="Coffeeroasters" />
+        </Link>
         <nav>
-          <ul>
+          <ul className="footer-container-list">
             <Link to="/">
               <li>Home</li>
             </Link>
