@@ -39,12 +39,14 @@ const Home = () => {
       </section>
       
       <section className="step">
-        <h3 className="step title">How it works</h3>
+        <h3 className="step-title">How it works</h3>
         <div className="step-process"></div>
         <div className="step-container">
           <Step />
-          <button className="step-button button">Create your plan</button>
         </div>
+        <Link to="/plan">
+          <button className="step-button button">Create your plan</button>
+        </Link>
       </section>
     </main>
   );
