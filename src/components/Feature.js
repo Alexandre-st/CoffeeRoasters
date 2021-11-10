@@ -31,8 +31,10 @@ const Feature = () => {
       return (
         <div className="choose-content" key={uuidv4()}>
           <img className="choose-content-img" src={feature.img} alt={feature.name} />
-          <h4 className="choose-content-title">{feature.title}</h4>
-          <p className="choose-content-txt">{feature.text}</p>
+          <div className="choose-content-container">
+            <h4 className="choose-content-title">{feature.title}</h4>
+            <p className="choose-content-txt">{feature.text}</p>
+          </div>
         </div>
       );
     })
