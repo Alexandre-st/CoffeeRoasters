@@ -23,6 +23,11 @@ button {
 .main {
   max-width: 144rem;
   margin: 0 auto;
+  padding: 0 2.4rem;
+
+  @include mq(tablet) {
+    padding: 0 4rem;
+  }
 }
 
 button {

@@ -17,19 +17,21 @@ const Footer = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">About us</Link>
             </li>
             <li>
               <Link to="/plan">Create your plan</Link>
             </li>
           </ul>
         </nav>
+
         <div className="footer-social">
           <img src={facebook} alt="Facebook" />
           <img src={twitter} alt="Twitter" />
           <img src={instagram} alt="Instagram" />
         </div>
       </div>
+      
     </footer>
   );
 }

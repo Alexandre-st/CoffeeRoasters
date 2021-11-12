@@ -2,14 +2,6 @@
 @use "../variables/mixins" as *;
 @use "../abstract/colors" as *;
 
-.main {
-  padding: 0 2.4rem;
-
-  @include mq(tablet) {
-    padding: 0 4rem;
-  }
-}
-
 // == Hero Part
 .home {
   background-image: url(../../assets/home/mobile/image-hero-coffeepress.jpg);

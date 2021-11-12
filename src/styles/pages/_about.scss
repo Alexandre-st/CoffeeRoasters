@@ -1,0 +1,170 @@
+// To use breakpoints and the diferents colors
+@use "../variables/mixins" as *;
+@use "../abstract/colors" as *;
+
+.about {
+  background-image: url(../../assets/about/mobile/image-hero-whitecup.jpg);
+  background-size: cover;
+  border-radius: 1rem;
+  height: 40rem;
+  margin-bottom: 12rem;
+
+  @include mq(tablet) {
+    background-image: url(../../assets/about/tablet/image-hero-whitecup.jpg);
+    margin-bottom: 14.4rem;
+  }
+
+  &-title {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.description {
+  // Fisrt part of the description
+  &-first {
+    @include mq(tablet) {
+      display: flex;
+      gap: 6.9rem;
+
+      @include mq(tablet) {
+        margin-bottom: 14.4rem;
+      }
+    }
+
+    &-img {
+      border-radius: 1rem;
+      margin-bottom: 4.8rem;
+    }
+
+    &-content {
+      text-align: center;
+
+      @include mq(tablet) {
+        text-align: left;
+        width: 45.3rem;
+      }
+
+      &-title {
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+        margin-bottom: 3rem;
+      }
+
+      &-txt {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: $dark-grey;
+        opacity: 0.8;
+        margin-bottom: 12rem;
+
+        @include mq(tablet) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Second part of description
+  &-second {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: $dark-grey;
+    color: $light-cream;
+    text-align: center;
+    position: relative;
+    border-radius: 1rem;
+
+    &-image {
+      padding: 0 2.4rem;
+
+      @include mq(tablet) {
+        padding: 0 5.7rem;
+      }
+    }
+
+    &-img {
+      border-radius: 8px;
+      margin-top: -7.6rem;
+
+      @include mq(tablet) {
+        margin-top: -11.2rem;
+      }
+    }
+
+    &-content {
+      // margin-top: 14.8rem;
+      padding: 6.4rem 2.4rem 6.1rem 2.4rem;
+
+      @include mq(tablet) {
+        padding: 6.4rem 7.4rem 6.7rem 7.4rem;
+      }
+
+      &-title {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+        margin-bottom: 2.4rem;
+
+        @include mq(tablet) {
+          font-size: 3.2rem;
+          line-height: 4.8rem;
+        }
+      }
+
+      &-txt {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+// Quarter Part
+.quarter {
+  margin-top: 12rem;
+  text-align: center;
+  margin-bottom: 12rem;
+
+  @include mq(tablet) {
+    text-align: left;
+  }
+
+  &-title {
+    margin-bottom: 7.2rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: $grey;
+  }
+
+  &-container {
+    @include mq(tablet) {
+      display: flex;
+      gap: 9px;
+    }
+  }
+
+  &-content {
+    color: $dark-grey;
+
+    @include mq(tablet) {
+      width: 22.3rem;
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+      margin: 4.79rem 0 2.2rem 0;
+
+      @include mq(tablet) {
+        font-size: 2.4rem;
+      }
+    }
+
+    &-list {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      margin-bottom: 8rem;
+    }
+  }
+}

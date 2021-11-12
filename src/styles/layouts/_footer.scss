@@ -12,6 +12,7 @@
   }
 
   &-img {
+    width: 18.74rem;
     max-width: 23.6rem;
 
     @include mq(laptop) {
@@ -42,10 +43,6 @@
       line-height: 1.5rem;
       letter-spacing: 0.92px;
 
-      li {
-        cursor: pointer;
-      }
-
       @include mq(tablet) {
         flex-direction: row;
         justify-content: center;
@@ -54,9 +51,12 @@
       }
 
       @include mq(laptop) {
-        margin: 0 36.8rem 0 0;
+        margin: 0;
         gap: 3.3rem;
-        align-self: center;
+      }
+
+      li {
+        cursor: pointer;
       }
     }
   }
@@ -65,5 +65,9 @@
     display: flex;
     justify-content: center;
     gap: 2.4rem;
+
+    @include mq(laptop) {
+      margin-left: auto;
+    }
   }
 }

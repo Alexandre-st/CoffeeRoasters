@@ -37,8 +37,8 @@ const Quarters = () => {
     quarters.map(quarter => {
       return (
         <div className="quarter-content" key={uuidv4()}>
-          <img src={quarter.img} alt={quarter.name} />
-          <h4 className="quarter-content-title">{quarter.title}</h4>
+        <img src={quarter.img} alt={quarter.name} />
+        <h4 className="quarter-content-title">{quarter.name}</h4>
           <ul className="quarter-content-list">
             <li>{quarter.street}</li>
             <li>{quarter.city}</li>

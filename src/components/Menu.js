@@ -28,7 +28,7 @@ const Menu = () => {
                 <li>Home</li>
               </Link>
               <Link to="/about">
-                <li>About</li>
+                <li>About us</li>
               </Link>
               <Link to="/plan">
                 <li>Create your plan</li>
