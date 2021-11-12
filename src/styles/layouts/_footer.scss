@@ -41,7 +41,10 @@
       font-size: 1.2rem;
       line-height: 1.5rem;
       letter-spacing: 0.92px;
-      cursor: pointer;
+
+      li {
+        cursor: pointer;
+      }
 
       @include mq(tablet) {
         flex-direction: row;

@@ -14,15 +14,15 @@ const Header = () => {
 
         <nav className="header-nav-desktop">
           <ul>
-            <Link to="/">
-              <li>Home</li>
-            </Link>
-            <Link to="/about">
-              <li>About</li>
-            </Link>
-            <Link to="/plan">
-              <li>Create your plan</li>
-            </Link>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/plan">Create your plan</Link>
+            </li>
           </ul>
         </nav>
 
