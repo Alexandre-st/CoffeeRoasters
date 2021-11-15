@@ -9,8 +9,8 @@ const Quarters = () => {
     {
       img: Uk,
       name: 'United Kingdom',
-      street: 'Alcaston',
-      city: '68  Asfordby Rd',
+      street: '68  Asfordby Rd',
+      city: 'Alcaston',
       zip: 'SY6 1YA',
       number: '+44 1241 918425',
     },
