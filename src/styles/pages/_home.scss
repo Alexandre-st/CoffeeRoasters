@@ -85,6 +85,12 @@
     margin-top: 1.4rem;
   }
 
+  @include mq(laptop) {
+    max-width: 128rem;
+    margin: auto;
+    margin-top: 20rem;
+  }
+
   &-title {
     font-size: 2.8rem;
     line-height: 2.8rem;
@@ -128,6 +134,12 @@
 
   @include mq(tablet) {
     text-align: left;
+  }
+
+  @include mq(laptop) {
+    max-width: 128rem;
+    margin: auto;
+    margin-top: 20rem;
   }
 
   &-process {

@@ -116,8 +116,9 @@
 
     @include mq(laptop) {
       flex-direction: row;
+      justify-content: space-between;
       text-align: left;
-      gap: 12.5rem;
+      gap: 12.7rem;
       margin-top: 16.8rem;
     }
 
@@ -138,11 +139,11 @@
       }
 
       @include mq(laptop) {
+        margin-bottom: 8.8rem;
       }
     }
 
     &-content {
-      // margin-top: 14.8rem;
       padding: 6.4rem 2.4rem 6.1rem 2.4rem;
 
       @include mq(tablet) {
@@ -150,8 +151,8 @@
       }
 
       @include mq(laptop) {
-        padding: 8.8rem 0 17.6rem 8.3rem;
-        // max-width: 54rem;
+        padding: 8.8rem 0 0 8.3rem;
+        margin-bottom: 8.8rem;
       }
 
       &-title {
@@ -178,6 +179,7 @@
         @include mq(laptop) {
           font-size: 1.6rem;
           line-height: 2.6rem;
+          max-width: 54rem;
         }
       }
     }
@@ -186,12 +188,16 @@
 
 // Quarter Part
 .quarter {
-  margin-top: 12rem;
+  margin: 12rem 0;
   text-align: center;
-  margin-bottom: 12rem;
 
   @include mq(tablet) {
     text-align: left;
+  }
+
+  @include mq(laptop) {
+    max-width: 128rem;
+    margin: auto;
   }
 
   &-title {
@@ -199,12 +205,21 @@
     font-size: 2.4rem;
     line-height: 3.2rem;
     color: $grey;
+
+    @include mq(laptop) {
+      margin-top: 16.8rem;
+    }
   }
 
   &-container {
     @include mq(tablet) {
       display: flex;
       gap: 9px;
+    }
+
+    @include mq(laptop) {
+      margin-bottom: 8.8rem;
+      gap: 9.5rem;
     }
   }
 
@@ -213,6 +228,10 @@
 
     @include mq(tablet) {
       width: 22.3rem;
+
+      @include mq(laptop) {
+        width: 28.5rem;
+      }
     }
 
     &-title {
@@ -222,6 +241,11 @@
 
       @include mq(tablet) {
         font-size: 2.4rem;
+      }
+
+      @include mq(laptop) {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
       }
     }
 
