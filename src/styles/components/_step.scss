@@ -2,6 +2,8 @@
 @use "../variables/mixins" as *;
 @use "../abstract/colors" as *;
 
+// The content are the same for the both pages but one nedd background
+// This part is for the homepage
 .step-content {
   color: $dark-grey;
 

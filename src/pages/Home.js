@@ -3,7 +3,7 @@ import Coffee from "../components/Coffee";
 import Feature from "../components/Feature";
 import Step from "../components/Step";
 
-const Home = () => {
+const Home = ({props }) => {
 
   return ( 
     <main className="main">
