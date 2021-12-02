@@ -1,0 +1,61 @@
+// To use breakpoints and the diferents colors
+@use "../variables/mixins" as *;
+@use "../abstract/colors" as *;
+
+.composition {
+  &-left {
+    display: none;
+  }
+
+  // &-right {
+
+  // }
+
+  &-dropdown {
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3.2rem;
+
+      h2 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        color: $grey;
+      }
+
+      i {
+        transform: rotate(180deg);
+      }
+    }
+
+    &-content {
+      margin-bottom: 11rem;
+      // display: none;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        li {
+          background-color: $dark-cream;
+          padding: 2.4rem 2.5rem;
+          border-radius: 8px;
+          color: $dark-grey;
+
+          h4 {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+          }
+
+          p {
+            margin-top: 0.8rem;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+          }
+        }
+      }
+    }
+  }
+}

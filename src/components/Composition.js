@@ -1,6 +1,10 @@
+import { useRef, useState } from 'react';
 import {v4 as uuidv4} from 'uuid';
+import arrow from '../assets/plan/desktop/icon-arrow.svg';
 
 const Composition = () => {
+
+  const [open, setOpen] = useState(false);
 
   const selections = [
     {
@@ -100,6 +104,12 @@ const Composition = () => {
     },
   ];
 
+  const ref = useRef();
+
+  const openDropdown = () => {
+    setOpen(!open);
+  };
+
   return ( 
     <section className="composition">
       <aside className="composition-left">
@@ -115,7 +125,35 @@ const Composition = () => {
         </ul>
       </aside>
       <div className="composition-right">
-
+        {selections.map(dropdown => {
+          return (
+            <div className="composition-dropdown" key={uuidv4()} id={dropdown.id}>
+              <div className="composition-dropdown-title" onClick={openDropdown} >
+                <h2>{dropdown.question}</h2>
+                <img 
+                  src={arrow} alt="To show the selection" 
+                  style={!open ? {transform: 'rotate(0deg)'} : {}}
+                />
+              </div>
+              <div className="composition-dropdown-content">
+                <ul ref={ref}>
+                  <li>
+                    <h4>{dropdown.options[0].name}</h4>
+                    <p>{dropdown.options[0].text}</p>
+                  </li>
+                  <li>
+                    <h4>{dropdown.options[1].name}</h4>
+                    <p>{dropdown.options[1].text}</p>
+                  </li>
+                  <li>
+                    <h4>{dropdown.options[2].name}</h4>
+                    <p>{dropdown.options[2].text}</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </section>
   );
