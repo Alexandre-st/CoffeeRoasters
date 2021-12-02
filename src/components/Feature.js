@@ -33,7 +33,7 @@ const Feature = () => {
           <img className="choose-content-img" src={feature.img} alt={feature.name} />
           <div className="choose-content-container">
             <h4 className="choose-content-title">{feature.title}</h4>
-            <p className="choose-content-txt">{feature.text}</p>
+            <p className="choose-content-txt text">{feature.text}</p>
           </div>
         </div>
       );

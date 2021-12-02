@@ -86,19 +86,12 @@
       }
 
       &-txt {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
         color: $dark-grey;
         opacity: 0.8;
         margin-bottom: 12rem;
 
         @include mq(tablet) {
           margin-bottom: 0;
-        }
-
-        @include mq(laptop) {
-          font-size: 1.6rem;
-          line-height: 2.6rem;
         }
       }
     }
@@ -172,13 +165,9 @@
       }
 
       &-txt {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
         opacity: 0.8;
 
         @include mq(laptop) {
-          font-size: 1.6rem;
-          line-height: 2.6rem;
           max-width: 54rem;
         }
       }

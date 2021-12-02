@@ -27,7 +27,7 @@ const StepPlan = () => {
           <span className="step-plan-dot"></span>
           <h5 className="step-content-number">{step.number}</h5>
           <h3 className="step-plan-content-title">{step.title}</h3>
-          <p className="step-plan-content-txt">{step.text}</p>
+          <p className="step-plan-content-txt text">{step.text}</p>
         </div>
       )
     })

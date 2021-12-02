@@ -36,13 +36,9 @@
   }
 
   &-txt {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
     margin-bottom: 5.6rem;
 
     @include mq(laptop) {
-      font-size: 1.6rem;
-      line-height: 2.6rem;
       margin-bottom: 7.9rem;
     }
   }

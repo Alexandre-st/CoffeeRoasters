@@ -10,7 +10,7 @@ const Home = ({props }) => {
       <section className="home">
         <div className="hero-content">
           <h1 className="hero-content-title">Great coffee made simple.</h1>
-          <p className="hero-content-text">
+          <p className="hero-content-text text">
             Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.
           </p>
           <button className="button">
@@ -30,7 +30,7 @@ const Home = ({props }) => {
 
       <section className="choose">
         <h3 className="choose-title">Why choose us?</h3>
-        <p className="choose-txt">
+        <p className="choose-txt text">
           A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.
         </p>
         <div className="choose-container">

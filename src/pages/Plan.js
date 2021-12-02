@@ -8,7 +8,7 @@ const Plan = () => {
         <section className="plan">
           <div className="hero-content">
             <h1 className="hero-content-title">Create a plan</h1>
-            <p className="hero-content-text">
+            <p className="hero-content-text text">
             Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.
             </p>
           </div>
@@ -24,9 +24,6 @@ const Plan = () => {
     
       <div className="main">
         <Composition />
-          <div className="dropdown">
-
-          </div>
       </div>
     </main>
   );

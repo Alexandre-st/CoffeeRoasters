@@ -27,7 +27,7 @@ const Step = () => {
           <span className="step-dot"></span>
           <h5 className="step-content-number">{step.number}</h5>
           <h3 className="step-content-title">{step.title}</h3>
-          <p className="step-content-txt">{step.text}</p>
+          <p className="step-content-txt text">{step.text}</p>
         </div>
       )
     })

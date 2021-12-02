@@ -36,7 +36,7 @@ const Coffee = () => {
           <img className="collection-content-img" src={coffee.img} alt={coffee.name} />
           <div className="collection-content-text">
             <h4 className="collection-content-text-name">{coffee.name}</h4>
-            <p className="collection-content-text-paragraph">{coffee.text}</p>
+            <p className="collection-content-text-paragraph text">{coffee.text}</p>
           </div>
         </div>
       )
