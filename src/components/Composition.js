@@ -1,10 +1,10 @@
-import { useRef, useState } from 'react';
+import { useState, useRef } from 'react';
 import {v4 as uuidv4} from 'uuid';
 import arrow from '../assets/plan/desktop/icon-arrow.svg';
 
 const Composition = () => {
 
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const selections = [
     {
@@ -107,7 +107,7 @@ const Composition = () => {
   const ref = useRef();
 
   const openDropdown = () => {
-    setOpen(!open);
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
 
   return ( 
@@ -132,7 +132,7 @@ const Composition = () => {
                 <h2>{dropdown.question}</h2>
                 <img 
                   src={arrow} alt="To show the selection" 
-                  style={!open ? {transform: 'rotate(0deg)'} : {}}
+                  style={!isOpen ? {transform: 'rotate(0deg)'} : {}}
                 />
               </div>
               <div className="composition-dropdown-content">
