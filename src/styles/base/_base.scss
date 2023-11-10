@@ -1,0 +1,25 @@
+:root {
+  font-size: 10px;
+  background-color: var(--light-cream);
+  font-family: "Barlow", sans-serif;
+
+  // == COLOR
+  --dark-cyan: #0e8784;
+  --dark-gray-blue: #333d4b;
+  --pale-orange: #333d4b;
+  --light-cream: #fefcf7;
+  --grey: #83888f;
+}
+
+h1,
+h2,
+h3,
+h4,
+button {
+  font-family: "Fraunces", serif;
+}
+
+.container {
+  width: min(100% - 4.8rem, 128rem);
+  margin-inline: auto;
+}

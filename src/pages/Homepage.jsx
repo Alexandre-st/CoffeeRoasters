@@ -1,6 +1,7 @@
 const Homepage = () => {
   return (
-    <h1 style={{backgroundColor: "red"}}>Hello World !!</h1>
+    // <h1 style={{backgroundColor: "red"}}>Hello World !!</h1>
+    <></>
   );
 }
  
