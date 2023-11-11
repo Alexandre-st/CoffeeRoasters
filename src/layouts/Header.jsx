@@ -15,7 +15,6 @@ const Header = () => {
           alt="coffeeroasters"
         />
       </Link>
-      <img src="" alt="" />
       <nav className="nav-desktop">
         <ul>
           <li>HOME</li>
