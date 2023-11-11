@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="header container">
-      <Link to="/" aria-label="Link to the homepage">
+      <Link to="/" onClick={toggleMenu} aria-label="Link to the homepage">
         <img
           className="header-logo"
           src={logoCoffeeroasters}

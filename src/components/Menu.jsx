@@ -10,11 +10,12 @@ const Menu = ({ toggleMenu, setToggleMenu }) => {
   };
 
   return (
-    <div className="header-menu" onClick={openMenu}>
-      <img
-        src={toggleMenu ? closeIcon : openIcon}
-        alt={toggleMenu ? "Close the menu" : "Open the menu"}
-      />
+    <div className="header-menu">
+        <img
+          onClick={openMenu}
+          src={toggleMenu ? closeIcon : openIcon}
+          alt={toggleMenu ? "Close the menu" : "Open the menu"}
+        />
       <motion.nav
         className="nav"
         initial="initial"
