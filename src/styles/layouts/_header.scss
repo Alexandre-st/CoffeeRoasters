@@ -1,0 +1,77 @@
+@use "../base/mixins" as *;
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem 0 4rem;
+
+  @include mq(tablet) {
+    padding: 4rem 0 5.6rem;
+  }
+
+  @include mq(laptop) {
+    padding: 4.8rem 0;
+  }
+
+  &-logo {
+    height: 1.8rem;
+
+    @include mq(tablet) {
+      height: 2.6rem;
+    }
+  }
+
+  .nav-desktop {
+    display: none;
+
+    @include mq(tablet) {
+      display: inline-block;
+
+      ul {
+        display: flex;
+        gap: 3.3rem;
+        color: var(--grey);
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.923px;
+      }
+    }
+  }
+
+  &-menu {
+    @include mq(tablet) {
+      display: none;
+    }
+  }
+
+  // Nav on mobile & tablet devices
+  .nav {
+    position: absolute;
+    top: 13rem;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh; // Maybe need to be removed to have the linear-gradient
+    background: linear-gradient(
+      180deg,
+      var(--light-cream) 27.94%,
+      rgba(254, 252, 247, 0.504981) 100%
+    );
+
+    &-list {
+      text-align: center;
+      font-family: Fraunces;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      color: var(--dark-gray-blue);
+
+      li:not(:last-child) {
+        margin-bottom: 3.2rem;
+      }
+    }
+  }
+}
