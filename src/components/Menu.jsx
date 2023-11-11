@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import propTypes from "prop-types";
 import closeIcon from "../assets/shared/mobile/icon-close.svg";
 import openIcon from "../assets/shared/mobile/icon-hamburger.svg";
+import { background, fadeIn } from "../utils/motion";
 
 const Menu = ({ toggleMenu, setToggleMenu }) => {
   const openMenu = () => {
@@ -8,20 +10,41 @@ const Menu = ({ toggleMenu, setToggleMenu }) => {
   };
 
   return (
-    <div className="header-menu">
+    <div className="header-menu" onClick={openMenu}>
       <img
         src={toggleMenu ? closeIcon : openIcon}
         alt={toggleMenu ? "Close the menu" : "Open the menu"}
-        onClick={openMenu}
       />
-
-      <div className="nav">
-        <ul className="nav-list">
-          <li>HOME</li>
-          <li>ABOUT US</li>
-          <li>CREATE YOUR PLAN</li>
-        </ul>
-      </div>
+      <motion.nav
+        className="nav"
+        initial="initial"
+        animate={toggleMenu ? "open" : "closed"}
+        variants={background}
+      >
+        <motion.ul className="nav-list">
+          <motion.li
+            initial
+            animate={toggleMenu ? "open" : "initial"}
+            variants={fadeIn(0.3)}
+          >
+            Home
+          </motion.li>
+          <motion.li
+            initial
+            animate={toggleMenu ? "open" : "initial"}
+            variants={fadeIn(0.4)}
+          >
+            About Us
+          </motion.li>
+          <motion.li
+            initial
+            animate={toggleMenu ? "open" : "initial"}
+            variants={fadeIn(0.5)}
+          >
+            Create Your Plan
+          </motion.li>
+        </motion.ul>
+      </motion.nav>
     </div>
   );
 };

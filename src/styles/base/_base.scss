@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 :root {
   font-size: 10px;
   background-color: var(--light-cream);
@@ -22,4 +24,8 @@ button {
 .container {
   width: min(100% - 4.8rem, 128rem);
   margin-inline: auto;
+
+  @include mq(tablet) {
+    width: min(100% - 4rem, 128rem);
+  }
 }

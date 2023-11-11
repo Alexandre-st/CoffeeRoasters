@@ -7,9 +7,9 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header className="container">
+    <header className="header container">
       <Link to="/" aria-label="Link to the homepage">
-        <img src={logoCoffeeroasters} alt="coffeeroasters" />
+        <img className="header-logo" src={logoCoffeeroasters} alt="coffeeroasters" />
       </Link>
       <img src="" alt="" />
       <nav className="nav-desktop">
