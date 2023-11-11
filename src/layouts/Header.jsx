@@ -9,19 +9,23 @@ const Header = () => {
   return (
     <header className="header container">
       <Link to="/" aria-label="Link to the homepage">
-        <img className="header-logo" src={logoCoffeeroasters} alt="coffeeroasters" />
+        <img
+          className="header-logo"
+          src={logoCoffeeroasters}
+          alt="coffeeroasters"
+        />
       </Link>
       <img src="" alt="" />
       <nav className="nav-desktop">
-          <ul>
-            <li>HOME</li>
-            <li>ABOUT US</li>
-            <li>CREATE YOUR PLAN</li>
-          </ul>
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT US</li>
+          <li>CREATE YOUR PLAN</li>
+        </ul>
       </nav>
       <Menu toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
     </header>
   );
-}
- 
+};
+
 export default Header;

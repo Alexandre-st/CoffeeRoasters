@@ -24,6 +24,9 @@ const fadeIn = (delay) => {
     initial: {
       y: -100,
       opacity: 0,
+      transition: {
+        delay: delay,
+      },
     },
     open: {
       y: 0,
